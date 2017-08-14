@@ -7,13 +7,13 @@ var y = 0;
 
 
 function setup(){ // dimensionner aussi l'article en hauteur
-	canvasLateral = createCanvas(windowWidth/4-10,windowHeight-160);
+	canvasLateral = createCanvas(windowWidth/4-10,windowHeight-180);
 	canvasLateral.parent("canvasAnim");
 	background(255,217,204);
 	frameRate(15);
 	initialiser();
 	article = document.getElementById ("article");
-	article.style.height = (windowHeight-170)+"px";
+	article.style.height = (windowHeight-180)+"px";
 }
 
 function draw(){
@@ -22,8 +22,8 @@ function draw(){
 	y++;
 }
 function windowResized(){
-	resizeCanvas(windowWidth/4-10,windowHeight-160);
-	article.style.height = (windowHeight-170)+"px";
+	resizeCanvas(windowWidth/4-10,windowHeight-180);
+	article.style.height = (windowHeight-180)+"px";
 }
 function initialiser(){
 	element = document.getElementById("textInit");
@@ -31,6 +31,7 @@ function initialiser(){
 	oldTexte = element.innerHTML;
 }
 function generer(){ // appellé par bouton générer
+alert (windowHeight);
 	if (init){
 		element.innerHTML = "Je ne suis pas un lorem ipsum";		
 	} else {

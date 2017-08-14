@@ -23,7 +23,7 @@ header, section, footer, aside, nav, main, article, figure { display: block;}
 [class*="col-"] { /* toutes les classes qui ont comme valeur "col-" */
     float: left;
 }
-.row::after { /* pour placer correctement les éléments suivants */
+.row,nav::after { /* pour placer correctement les éléments suivants */
     content: "";
     clear: both;
     display: table;
@@ -43,8 +43,6 @@ header, section, footer, aside, nav, main, article, figure { display: block;}
 body{
 	background:#ffdab3;
 	font-size:100%;
-	/*overflow-x:auto;
-	overflow : -moz-scrollbars-horizontal;*/
 }
 header {
 	color:red;
@@ -84,25 +82,18 @@ nav li:hover{
 }
 section {
 	margin:10px;
-	max-height:600px;
 }
 canvas {
 	border:1px solid #000000;
 }
 #canvasAnim {
-	/*padding: 5px;*/
-	/*max-height:inherit;*/
+	padding: 5px;
 }
 article {
 	font-family:architects_daughterregular, Arial, sans-serif;
 	text-align:justify;
-	/*max-height:inherit;*/
 	overflow:auto;
 	padding: 1em;
-	/*border : 1px solid red;*/
-}
-p.premierParagraphe{
-	/*margin-top:-5px;*/
 }
 p.premierParagraphe::first-letter{
 	font-family:great_vibesregular,"Trebuchet MS",sans-serif;

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> test site responsive</title>
+		<link href = "responsive.css" type="text/css" rel = "stylesheet" />
+		<script src="libraries/p5.min.js" type="text/javascript"></script>
+		<script src = "sketchLoremIpsumResponsive.js" type="text/javascript"></script>
+	</head>
+	<body> 
+		<header id="top" class="row">
+			<h1 id="titre"> L'histoire de Lorem Ipsum </h1>
+			<nav>
+				<ul>
+					<li><a href = "pages/about.html">about</a></li>
+					<li><a href = "#top" onclick="generer();">générer</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class= "row">
+			<div id = "canvasAnim" class="col-3">
+					<!-- <canvas width=100%" height ="600"></canvas> -->
+					<!-- la largeur reste fixe et indépendante de la taille div -->
+			</div>
+			<article class="col-9" id="article">
+					<p class="premierParagraphe" id="textInit" >
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id nunc id lorem consequat porta. Phasellus cursus convallis ante, ut venenatis enim luctus eu. Nulla interdum rhoncus neque, vitae convallis libero. In vel gravida elit, ut ultrices dui. Nulla commodo enim et tellus mollis convallis. Nam aliquam suscipit metus ac fermentum. Curabitur ultrices libero quis neque condimentum auctor. Nunc tincidunt tempor ornare. Suspendisse eget cursus eros. Suspendisse tristique, leo vel hendrerit pharetra, sem tortor luctus mauris, sed suscipit odio dolor sit amet metus. Maecenas semper erat libero, eu hendrerit turpis accumsan sit amet. Pellentesque eget pharetra purus, eget vestibulum nunc. Vestibulum non nisi nec lacus fermentum viverra. Mauris ultrices dignissim nisl, non interdum neque interdum id. Praesent hendrerit mi at dolor maximus, non tempus mi facilisis. 
+					</p>
+					<p>
+						 Donec mollis sagittis massa, in consequat ligula pellentesque vel. Aenean sapien urna, mollis vel risus nec, mattis tempus elit. Etiam ante dui, fermentum sit amet fermentum ac, lobortis sodales nulla. Phasellus lobortis lacus eu lacinia aliquet. Ut sed cursus mauris, id laoreet odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam accumsan, metus vitae tincidunt suscipit, odio augue vulputate quam, in tempus ligula felis dignissim leo. Donec varius sem a quam scelerisque fringilla. Sed non faucibus enim. Cras sed malesuada mauris. Proin hendrerit tellus non nisl fringilla congue. Fusce ac congue massa. Sed eros nunc, pulvinar bibendum mattis quis, posuere eget urna. Donec nec maximus metus, vel ultricies nunc. Donec vehicula tincidunt commodo. 
+					</p>
+					<p>
+						 Nunc posuere blandit arcu at semper. Suspendisse eu interdum libero, quis ultrices sapien. Curabitur ac turpis ac tellus rutrum aliquet. Donec suscipit quam elit, ac efficitur ex eleifend in. Nullam porta tortor a euismod ullamcorper. Proin id dui porttitor arcu tincidunt maximus quis eu eros. In hac habitasse platea dictumst. Phasellus eget tellus iaculis, sagittis turpis interdum, accumsan lorem. Quisque vitae auctor diam. 
+					</p>
+				</article>
+		</section>
+	</body>
+</html>
